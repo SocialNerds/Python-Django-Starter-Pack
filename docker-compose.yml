@@ -1,0 +1,33 @@
+version: "3"
+services:
+  http:
+    build:
+      context: ./http
+      args:
+        UID: ${USER_ID}
+        GID: ${GROUP_ID}
+    container_name: app_http
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data/web/static:/home/serveruser/static:delegated
+    depends_on:
+      - wsgi
+    networks:
+      app_net:
+  wsgi:
+    build:
+      context: ./wsgi
+      args:
+        UID: ${USER_ID}
+        GID: ${GROUP_ID}
+    container_name: app_wsgi
+    restart: always
+    volumes:
+      - ./data/web:/home/serveruser/web:delegated
+    networks:
+      app_net:
+networks:
+  app_net:

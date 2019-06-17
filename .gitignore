@@ -1,0 +1,9 @@
+.DS_Store
+._.DS_Store
+.vscode
+.env
+*.pyc
+__pycache__
+db.sqlite3
+./data/web/static/admin
+.idea
