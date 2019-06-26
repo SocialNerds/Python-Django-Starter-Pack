@@ -3,7 +3,7 @@
 This repo contains the starting point to create Django application on Docker.
 
 # Check the full explanation videos (GR)
-[![Πως να Ξεκινήσω, Python Tutorial](https://img.youtube.com/vi/5EX76-whtHw/0.jpg)](https://bit.ly/31z7Ci1)
+[![Πως να Ξεκινήσω, Python Tutorial](https://img.youtube.com/vi/5EX76-whtHw/0.jpg)](https://www.youtube.com/watch?v=5EX76-whtHw&list=PLuswtImoIwq8q097zQp-qIdQGA0IyObir)
 # Installation
 Requirements
 - You need to have [Docker](https://docs.docker.com/engine/installation/) and [Docker Compose](https://docs.docker.com/compose/install/) installed
