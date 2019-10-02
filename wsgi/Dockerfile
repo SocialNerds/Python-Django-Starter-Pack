@@ -10,7 +10,7 @@ RUN groupadd -r serveruser -g $GID && useradd -ms /bin/bash serveruser -u $UID -
 # Install some packages.
 RUN apt-get update && apt-get install -y --no-install-recommends \
   python3-minimal python3-setuptools python3-pip && \
-  pip3 install django gunicorn && \
+  pip3 install django gunicorn numpy && \
   ln -s /usr/bin/python3 /usr/bin/python && \
   ln -s /usr/bin/pip3 /usr/bin/pip && \
   pip install --upgrade pip
